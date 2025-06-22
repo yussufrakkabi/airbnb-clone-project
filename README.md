@@ -130,6 +130,33 @@ Records details of completed transactions.
 - Each **Booking** can have **one Payment**
 This structure clearly defines each entity and how they relate. Would you like a visual ER diagram version of this too?
 
+## 🧩 Feature Breakdown
+
+### 1. **User Management**
+Enables users to register, log in, and manage their profile securely. It supports role distinction between guests and hosts, allowing different access levels and features based on user type.
+
+### 2. **Property Management**
+Hosts can create, update, and delete property listings. Each listing includes details like title, description, location, price, and images, providing essential information for guests browsing accommodations.
+
+### 3. **Booking System**
+Allows guests to book available properties for specific dates. This system ensures date availability, tracks reservations, and lets users view their booking history.
+
+### 4. **Payment Integration**
+Handles secure online transactions using providers like Stripe or PayPal. It ensures that payments are processed safely, with detailed tracking of booking-related charges.
+
+### 5. **Review System**
+Users can leave ratings and feedback after a stay, which appear on property listings. This feature helps build trust in the platform and aids future guests in making informed decisions.
+
+### 6. **Authentication & Authorization**
+Implements secure login mechanisms using hashed passwords and token-based access (e.g., JWT). It ensures users only access resources they're permitted to, protecting user data and actions.
+
+### 7. **Admin Controls (Optional)**
+Admins can moderate listings, manage users, and oversee platform health. This supports overall application governance and abuse prevention.
+
+### 8. **API-First Architecture**
+All features are accessible via RESTful APIs, making the backend scalable and frontend-agnostic. This promotes flexibility for future mobile or SPA frontends.
+
+
 ## API Security
 
 Security is critical in any application that handles sensitive user data, financial transactions, and user-generated content. Below are the key security practices and why they matter:
